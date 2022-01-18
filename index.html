@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Hello there!</h1>
+    <a href="/me.html">My other page</a>
+
+    <h2>input types</h2>
+    <form action="">
+      <label>text</label>
+      <input type="text" /><br />
+      <label>radio:</label>
+      <label>Male</label>
+      <input type="radio" name="gender" value="male" />
+      <label>Female</label>
+      <input type="radio" name="gender" value="female" />
+      <label>Other</label>
+      <input type="radio" name="gender" value="other" /><br />
+      <label>checkbox:</label>
+      <input type="checkbox" id="apple" name="apple" checked />
+      <label for="apple">Apple</label>
+      <input type="checkbox" id="orange" name="orange" />
+      <label for="orange">Orange</label><br />
+      <label>email</label>
+      <input type="email" /><br />
+      <label>password</label>
+      <input type="password" /><br />
+      <label>number</label>
+      <input type="number" /><br />
+      <label>date</label>
+      <input type="date" /><br />
+      <label>Time</label>
+      <input type="time" /><br />
+      <label>color</label>
+      <input type="color" /><br />
+      <label>phone</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        required
+      /><br />
+      <label>File</label>
+      <input type="file" accept="image/*,.pdf" /><br />
+      <input type="submit" />
+    </form>
+    <h2>Multipart form data</h2>
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" id="file" name="file" multiple /><br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
